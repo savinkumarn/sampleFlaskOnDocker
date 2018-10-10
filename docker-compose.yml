@@ -7,7 +7,7 @@ services:
     ports:
       - "27017:27017"
   web:
-    build: ./PythonDocker
+    build: .
     command: flask run --host=0.0.0.0 --port=5000 
     volumes:
       - .:/app
